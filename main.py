@@ -83,7 +83,10 @@ def Supplement(pdf_path, anno_path, output_dir, background=False, map_type="mlp"
     # output: captions
     Picture2Caption(output_dir+"/bbox", output_dir, map_type)
 
-
+    # input: captions & manual annotations
+    # output: supplemented annotations
+    caption_name = output_dir + "/captions_" + map_type + ".txt"
+    Captions2Supplement(caption_name, anno_path, output_dir)
 
 
 
@@ -101,4 +104,4 @@ if __name__ == "__main__":
     if args.work_type == "translate":
         Pipeline(args.pdf_path, args.output_dir, args.background, args.map_type, args.book_id)
     elif args.work_type == "supplement":
-        pass
+        Supplement(args.pdf_path, args.anno_path, args.output_dir, args.background, args.map_type)
