@@ -6,3 +6,6 @@ tqdm
 pygtrans
 git+https://github.com/openai/CLIP.git
 git+https://github.com/replicate/cog.git@v0.0.20#egg=cog&subdirectory=python/
+pymupdf==1.18.14
+paddlepaddle-gpu==2.4.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
+paddleocr>=2.0.1
