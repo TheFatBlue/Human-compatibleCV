@@ -208,7 +208,23 @@ def Caption2FullText(cap_file, pic_file, sen_file, out_dir):
 
 # supplement the manual annotations with captions
 def Captions2Supplement(cap_file, anno_file, out_dir):
+    print("="*30)
+    print("Supplement the annotations...")
     with open(cap_file, 'r') as f:
         captions = f.readlines()
     with open(anno_file, 'r') as f:
         annotations = f.readlines()
+    cap_dict = {}
+    for cap in captions:
+        file, caption = cap.split('\t')
+        cap_dict[file] = caption
+    output = ""
+    for i in range(len):
+        name = annotations[i+i].split('/')
+        caption = annotations[i+i+1][0:-1]
+        caption += cap_dict[name]
+        output += caption
+    with open(out_dir+"/supplement.txt", 'w') as f:
+        f.write(output)
+    print("Supplement done!")
+    print("="*30)
