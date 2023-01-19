@@ -206,4 +206,9 @@ def Caption2FullText(cap_file, pic_file, sen_file, out_dir):
     print("Combination done!")
     print("="*30)
 
-# def Captions2Supplement(cap_file, )
+# supplement the manual annotations with captions
+def Captions2Supplement(cap_file, anno_file, out_dir):
+    with open(cap_file, 'r') as f:
+        captions = f.readlines()
+    with open(anno_file, 'r') as f:
+        annotations = f.readlines()

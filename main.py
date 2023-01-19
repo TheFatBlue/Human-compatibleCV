@@ -20,6 +20,7 @@ def Pipeline(input_path, output_dir, background=False, map_type="mlp", book_id=0
                 and all intermediate results
         background: does the book have a colored background
         map_type: the type of the mapping network using in the ClipCap
+        book_id: the id of the book
     """
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
