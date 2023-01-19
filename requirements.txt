@@ -1,0 +1,8 @@
+scikit-image==0.18.1
+transformers~=4.10.2
+ftfy
+regex
+tqdm
+pygtrans
+git+https://github.com/openai/CLIP.git
+git+https://github.com/replicate/cog.git@v0.0.20#egg=cog&subdirectory=python/
