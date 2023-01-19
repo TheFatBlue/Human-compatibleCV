@@ -312,7 +312,5 @@ if __name__ == "__main__":
         generated_text_prefix = client.translate(generated_text_prefix).translatedText
         out_data += file + '\t' + generated_text_prefix + '\n'
         
-    with open("train_output.txt", 'w') as f:
+    with open(args.save_dir + "/captions_" + args.map_type + ".txt", 'w') as f:
         f.write(out_data)
-
-
