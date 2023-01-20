@@ -7,9 +7,9 @@ pip install -r requirements.txt
 python -m pip install paddlepaddle-gpu==2.4.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
 ```
 
-You can find all the pretrained model and output [here](https://drive.google.com/drive/folders/1XOgx0RaxZQObv9oGCArdcBXsvGy2sz0E?usp=share_link), and the pretrained model is need to be placed in the derectory: `CLIP_prefix_caption/models`
+You can find all the pretrained model and output [here](https://drive.google.com/drive/folders/1XOgx0RaxZQObv9oGCArdcBXsvGy2sz0E?usp=share_link)(I can't guarantee that this link is still valid after the course), and the pretrained model is need to be placed in the derectory: `CLIP_prefix_caption/models`
 
-# Translate Books
+## Translate Books
 
 For example, you can translate the *i*th book using command:
 ```
@@ -32,7 +32,7 @@ python main.py \
 
 If the book is with a colored background, you need to add the argument `--background True`
 
-# Supplement Description
+## Supplement Description
 
 Similarly, you can supplement the manual description with command:
 ```
@@ -43,3 +43,7 @@ python main.py \
     i \
      --anno_path "PATH/TO/THE/MANUAL/ANNOTATIONS"
 ```
+
+## Others
+
+The code to generate the dataset is stored here: `gen_data/gen_data.py`, and the code to evaluate the caption is stored [here](https://drive.google.com/drive/folders/1XOgx0RaxZQObv9oGCArdcBXsvGy2sz0E?usp=share_link)
