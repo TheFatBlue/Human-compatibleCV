@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Visual impairment is one of the major diseases affecting the quality of human life today. Among the many inconveniences caused by visual impairment, reading books with illustrations is an aspect worth noting. Due to the different layout and styles of illustrations, how to accurately extract illustrations and obtain appropriate descriptions is a difficult problem. In this paper, we design a complete pipeline to translate scanned books and generate complete text with illustration description information, aiming to help the visually impaired have a better reading experience.
+Visual impairment is one of the major diseases affecting the quality of human life today. Among the many inconveniences caused by visual impairment, reading books with illustrations is an aspect worth noting. Due to the different layout and styles of illustrations, how to accurately extract illustrations and obtain appropriate descriptions is a difficult problem. In this paper, we design a complete pipeline to translate scanned books and generate complete text with illustration description information, aiming to help the visually impaired have a better reading experience. The paper is stored [here](https://github.com/TheFatBlue/Human-compatibleCV/blob/main/human_compatible_cv.pdf).
 
 ## Environment Setup
 
